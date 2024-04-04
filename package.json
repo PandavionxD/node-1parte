@@ -1,0 +1,20 @@
+{
+  "name": "02.parte01",
+  "version": "0.0.1",
+  "description": "Esta es nuestra primera aplicacion real de Nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js "
+  },
+  "author": "Alex Daniel",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "age-by-birthdate": "^1.0.1",
+    "uuid": "^9.0.1"
+  }
+}
