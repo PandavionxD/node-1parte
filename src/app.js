@@ -5,15 +5,28 @@
 
 // const { getAgeScript, getUuidScript } = require("./script");
 // const { maketGetUser } = require("./js-fundation/04-factory");
-const { getPokemon } =require('./js-fundation/05-pokemon-api')
 
-getPokemon(82).then((poke)=>{
-  console.log({poke})
-}).catch((error)=>{
-  console.log(error)
-}).finally(()=>{
-  console.log('peticion http terminada 😊')
-})
+// PETICION DEL POKEMON
+// const { getPokemon } = require("./js-fundation/05-pokemon-api");
+// getPokemon(82)
+//   .then((poke) => {
+//     console.log({ poke });
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(() => {
+//     console.log("peticion http terminada 😊");
+//   });
+
+// LOGER - WINSTONG
+const {buildLoger} = require('./script')
+
+const logger = buildLoger('app.js')
+logger.log('hola mundo')
+logger.error('Ups algo salio mal 🥹')
+
+
 
 
 // FUNCION DE ENCAPSULAMIENTO, BUENAS PRACTICAS
@@ -25,9 +38,6 @@ getPokemon(82).then((poke)=>{
 
 // const value1 = maketGetUser1(obj);
 // console.log(value1);
-
-
-
 
 // FUNCION DENTRO DE UNA FUNCION
 // const id = 1

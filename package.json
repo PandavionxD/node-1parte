@@ -16,6 +16,7 @@
   "dependencies": {
     "age-by-birthdate": "^1.0.1",
     "axios": "^1.6.8",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "winston": "^3.13.0"
   }
 }
